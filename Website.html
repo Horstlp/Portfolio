@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="tab-bar">
+        <button class="tab-link" onclick="openTab(event, 'About')">About</button>
+        <button class="tab-link" onclick="openTab(event, 'Artworks')">Artworks</button>
+        <button class="tab-link" onclick="openTab(event, 'Education')">Education</button>
+    </div>
+
+    <div id="About" class="tab-content">
+        <div class="glow-text">
+        <h1>About Me</h1>
+        </div>
+    </div>
+
+    <div id="Artworks" class="tab-content">
+        <div class="glow-text">
+        <h1>Artworks</h1>
+        </div>
+        <p>In here are all of my Artworks from over the years.</p>
+        <div class="gallery">
+            <img src="image2.png" alt="Artwork 1" class="gallery-item">
+            <img src="image3.png" alt="Artwork 2" class="gallery-item">
+            <img src="image1.png" alt="Artwork 1" class="gallery-item">
+            <img src="image4.png" alt="Artwork 2" class="gallery-item">
+            <img src="image5.png" alt="Artwork 1" class="gallery-item">
+
+        </div>
+    
+        <div id="fullscreenModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="fullscreenImage">
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    
+        <script src="script.js"></script>
+    </div>
+
+    <div id="Education" class="tab-content">
+        <div class="glow-text">
+        <h1>Education</h1>
+        </div>
+        <p>This is the Education section.</p>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://www.instagram.com" target="_blank" class="footer-link">My Instagram</a>
+            <a href="https://www.artstation.com" target="_blank" class="footer-link"> My ArtStation</a>
+            <a href="https://www.pinterest.com" target="_blank" class="footer-link">My Pinterest</a>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Set default tab
+        document.getElementsByClassName("tab-link")[0].click();
+    </script>
+</body>
+</html>
