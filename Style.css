@@ -92,7 +92,8 @@ p {
 }
 
 .gallery-item:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
+    border: 3px solid #FF6542 ;
 }
 
 .modal {
