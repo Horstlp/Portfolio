@@ -32,3 +32,4 @@ function changeImage(direction) {
     modalImg.src = images[currentIndex].src;
 }
 
+
