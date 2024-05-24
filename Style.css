@@ -28,7 +28,7 @@ body {
     background-color: inherit;
     padding: 15px 20px;
     color: #E5D0CC;
-    background-color: #444554;
+    border: 5px solid #8a97d8;
     border-radius: 5px;
     text-align: center;
     text-shadow: 0 0 5px #131313cb;
@@ -206,35 +206,5 @@ p {
     height: 2px; /* Set the thickness of the line */
     background-color: #0c0d12; /* Set the color of the line */
     margin: 20px 0; /* Adjust margin to position the line */
-  }
-
-  .container {
-    position: relative;
-    display: inline-block;
-}
-
-.photo {
-    max-width: 400px;
-    height: auto;
-    display: block;
-}
-
-.text-box {
-    position: absolute;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.text-box h2 {
-    margin: 0 0 10px;
-    font-size: 24px;
-}
-
-.text-box p {
-    margin: 0;
-    font-size: 16px;
 }
   
