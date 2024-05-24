@@ -16,6 +16,12 @@ closeModal.onclick = function () {
     modal.style.display = 'none';
 };
 
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        modal.style.display = 'none';
+    }
+});
+
 function changeImage(direction) {
     currentIndex += direction;
     if (currentIndex >= images.length) {

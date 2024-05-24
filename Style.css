@@ -48,8 +48,8 @@ body {
 }
 
 .tab-link.active {
-    background-color: #09090d;
-    color: #E5D0CC;
+    background-color: #FF6542;
+    color: #171821;
     text-align: center;
     text-shadow: 0 0 5px #131313cb;
 }
@@ -85,15 +85,13 @@ p {
 
 .gallery-item {
     border-radius: 15px;
-    min-width: 180px;
-    width: 15%;
-    height: 15%;
+    height: 350px;
     cursor: pointer;
     transition: transform 0.2s;
 }
 
 .gallery-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .modal {
@@ -109,11 +107,9 @@ p {
 }
 
 .modal-content {
-    margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
-    height: auto;
+    margin: auto;
+    height: 100%;
 }
 
 .close {
