@@ -28,7 +28,7 @@ body {
     background-color: inherit;
     padding: 15px 20px;
     color: #E5D0CC;
-    border: 5px solid #8a97d8;
+    background-color: #171821;
     border-radius: 5px;
     text-align: center;
     text-shadow: 0 0 5px #131313cb;
@@ -207,4 +207,54 @@ p {
     background-color: #0c0d12; /* Set the color of the line */
     margin: 20px 0; /* Adjust margin to position the line */
 }
+
+main{
+    display: grid;
+
+    @media all and (min-width: 100px) {
+        grid-template-areas: "header" "img" "img" "img" "p" "p";
+        grid-template-columns: 300px;
+    }
+    @media all and (min-width: 650px) {
+        grid-template-areas: "img header" "img p" "img p";
+        grid-template-columns: auto;
+    }
+
+
+    grid-template-rows: 50px 125px 125px;
+
+    gap: 10px;
+
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+main img{
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    min-width: 240px;
+    margin: auto;
+}
+
+main header{
+    display: block;
+    background-color: #0c0d12;
+    margin: auto;
+}
+
+main p{
+    text-align: justify;
+    width: 90%;
+    font-size: medium;
+    display: block;
+}
   
+
+
+img { grid-area: img;}
+header { grid-area: header;}
+p { grid-area: p;}
