@@ -168,7 +168,6 @@ p {
     padding: 20px 0;
     position: relative;
     width: 100%;
-    top: 100%;
     bottom: 0%;
     box-shadow: 0 0 5px #131313cb, 0 0 10px #131313cb, 0 0 20px #131313cb;
 }
@@ -208,7 +207,7 @@ p {
     margin: 20px 0; /* Adjust margin to position the line */
 }
 
-main{
+.Grid1{
     display: grid;
 
     @media all and (min-width: 100px) {
@@ -231,7 +230,7 @@ main{
 
 }
 
-main img{
+.Grid1 img{
     border-radius: 10px;
     display: block;
     height: 100%;
@@ -240,21 +239,51 @@ main img{
     margin: auto;
 }
 
-main header{
+.Grid1 header{
     display: block;
     background-color: #0c0d12;
     margin: auto;
 }
 
-main p{
+.Grid1 p{
     text-align: justify;
     width: 90%;
     font-size: medium;
     display: block;
 }
   
-
-
 img { grid-area: img;}
 header { grid-area: header;}
 p { grid-area: p;}
+
+
+.chibi-Image-Left img, .chibi-Image-Right img{
+    opacity: 0;
+    height: 0;
+}
+
+@media all and (min-width: 1250px) {
+    .chibi-Image-Left{
+        position: absolute;
+        left: 0;
+        height: 250px;
+        justify-content: center;
+    }
+    
+    .chibi-Image-Right{
+        right: 0;
+        height: 250px;
+        justify-content: center;
+    }
+    
+    .chibi-Image-Left img, .chibi-Image-Right img{
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
