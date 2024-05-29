@@ -1,7 +1,11 @@
 /*#region Fonts*/
 @font-face {
-    font-family: 'CustomFont';
+    font-family: 'Headers';
     src: url('moon_get-Heavy.ttf') format('truetype'),
+}
+@font-face {
+    font-family: 'Normal';
+    src: url('Lato-Black.ttf') format('truetype'),
 }
 /*#endregion */
 
@@ -16,12 +20,13 @@ body {
 
 h1{
     text-align: center;
-    font-family: 'CustomFont';
+    font-family: 'Headers';
 }
 
 p {
     text-align: center;
     color: white;
+    font-family: 'Normal';
     font-size: 18px; 
     word-wrap: break-word; 
     max-width: 600px; 
@@ -273,6 +278,7 @@ p { grid-area: p;}
 .chibi-Image-Left img, .chibi-Image-Right img{
     opacity: 0;
     height: 0;
+    margin: 0;
 }
 
 @media all and (min-width: 1250px) {
@@ -281,12 +287,15 @@ p { grid-area: p;}
         left: 0;
         height: 250px;
         justify-content: center;
+        margin: 0;
     }
     
     .chibi-Image-Right{
+        position: absolute;
         right: 0;
         height: 250px;
         justify-content: center;
+        margin: 0;
     }
     
     .chibi-Image-Left img, .chibi-Image-Right img{
