@@ -1,17 +1,16 @@
 /*#region Fonts*/
 @font-face {
-    font-family: 'Headers';
-    src: url('moon_get-Heavy.ttf') format('truetype'),
+    font-family: 'Heavy';
+    src: url('Lato-Black.ttf') format('truetype'),
 }
 @font-face {
     font-family: 'Normal';
-    src: url('Lato-Black.ttf') format('truetype'),
+    src: url('Montserrat-VariableFont_wght.ttf') format('truetype'),
 }
 /*#endregion */
 
 /*#region Basic*/
 body {
-    font-family: Arial, sans-serif;
     background-color: #171821;
     color: white;
     margin: 0;
@@ -20,7 +19,8 @@ body {
 
 h1{
     text-align: center;
-    font-family: 'Headers';
+    font-family: 'Heavy';
+    font-size: 700;
 }
 
 p {
@@ -52,6 +52,7 @@ p { grid-area: p;}
 }
 
 .tab-link {
+    font-family: 'Normal';
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 0.5%;
