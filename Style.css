@@ -203,6 +203,8 @@ p { grid-area: p;}
 
 /*#region Footer*/
 .footer {
+    font-family: 'Normal';
+    font-size: small;
     background-color: #444554;
     text-align: center;
     padding: 20px 0;
@@ -407,7 +409,7 @@ p { grid-area: p;}
     display: inline-block;
     max-width: 150px;
     padding: 10px 20px;
-    background-color: #284ca7;
+    background-color: #FF6542;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -415,7 +417,7 @@ p { grid-area: p;}
 }
 
 .download-button:hover {
-    background-color: #1f2488;
+    background-color: #be391c;
 }
 
 /*#endregion */
