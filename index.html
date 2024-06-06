@@ -10,12 +10,13 @@
     <div class="tab-bar">
         <button class="tab-link" onclick="openTab(event, 'About')">About Me</button>
         <button class="tab-link" onclick="openTab(event, 'Artworks')">Artworks</button>
+        <button class="tab-link" onclick="openTab(event, 'Games')">My Games</button>
     </div>
 
     <div id="About" class="tab-content">
 
         <div class="Grid1">
-            <img src="image7.png" alt="Artwork 1">
+            <img src="Foto.jpg" alt="Artwork 1">
             <div class="glow-text">
                 <h1>About Me</h1>
                 </div>
@@ -32,7 +33,7 @@
             <div class="glow-text">
                 <h1>My School</h1>
                 </div>
-            <p>My name is Kevin Jeitler, and I am 16 years old. I am currently attending HTL Spengergasse, where I am pursuing studies in game design. My passion for creating immersive and engaging virtual worlds has driven me to this field, and I am excited to develop my skills and knowledge in game development. At HTL Spengergasse, I am learning various aspects of game design, from conceptualizing ideas and storytelling to mastering the technical skills needed for game programming and graphic design. I am eager to contribute to the future of the gaming industry and look forward to creating games that captivate and inspire players worldwide.</p>
+            <p>The School I go to is the HTL Spengergasse it is a higher technical school offering a wide range of educational and training opportunities for both young people and adults. With a long-standing tradition in vocational education, we collaborate closely with industry and are committed to innovative thinking, contemporary teamwork, and project-based teaching methods. As a school that prepares students for life, our foremost priority is to provide comprehensive professional education and training, along with fostering social competence in our students.</p>
         </div>
 
     </div>
@@ -61,6 +62,42 @@
         </div>
         <div class="decorative-line"></div>
     
+        <div id="fullscreenModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="fullscreenImage">
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    
+        <script src="script.js"></script>
+    </div>
+
+    <div id="Games" class="tab-content">
+        <div class="glow-text">
+        <h1>Artworks</h1>
+        </div>
+        <p>In here are all of my Artworks from over the years.</p>
+        <div class="decorative-line"></div>
+
+        <div class="download-module">
+            <img src=".png" alt="Game Image" class="game-image">
+            <div class="game-description">
+                <h1>SkyIsland</h1>
+                <p>Kill all the toads and free this land of the monsters that lurk in this world!</p>
+                <a href="2324_2HMNG_Jeitler_ToadSlayer.zip" download class="download-button">Download Game</a>
+            </div>
+        </div>
+
+        <div class="download-module">
+            <img src="Gif1.gif" alt="Game Image" class="game-image">
+            <div class="game-description">
+                <h1>ToadSlayer</h1>
+                <p>Explore this floating islands, go on adventures and overcome any challenges!</p>
+                <a href="2324_2HMNG_Jeitler_ToadSlayer.zip" download class="download-button">Download Game</a>
+            </div>
+        </div>
+
+        <div class="decorative-line"></div>
         <div id="fullscreenModal" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content" id="fullscreenImage">
