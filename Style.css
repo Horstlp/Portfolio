@@ -402,6 +402,7 @@ p { grid-area: p;}
 }
 
 .download-button {
+    font-family: 'Normal';
     margin: auto;
     display: inline-block;
     max-width: 150px;
